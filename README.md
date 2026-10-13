@@ -1,6 +1,6 @@
 # QM640 synopsis reproducibility support
 
-Prepared locally for Pankaj Nagpal. No GitHub or GitLab repository was created.
+Prepared locally for Pankaj Nagpal. 
 
 This package contains verified source-data profiling, a complete 53-field raw dictionary,
 and measured missingness. Predictive modeling, inference, and SHAP analysis are proposed
@@ -41,10 +41,3 @@ The raw non-null audit does not establish range validity or pre-dispatch feature
 - Compare paired test Brier losses for RQ3; obtain RQ4 explanations and uncertainty.
 - Publish aggregate outputs, code, executed environment versions, and limitations.
 
-## Optional later publication
-
-The template's public GitHub requirement remains outstanding. If you choose to publish,
-create a repository in your own account, upload this support package and later analysis code,
-keep raw personal/security-sensitive data out of the repository, and provide the publisher
-download instructions. Add the actual public repository URL to the synopsis before submission
-if the course requires it at this stage. Do not describe this local package as a published repository.
