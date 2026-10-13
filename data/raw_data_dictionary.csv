@@ -1,0 +1,54 @@
+variable,parsed_type,publisher_definition,units,analysis_role,missing_count,missing_pct,fill_pct
+Type,str,Type of transaction made,not applicable,Predictor or aggregation source,0,0.0,100.0
+Days for shipping (real),int64,Actual shipping days of the purchased product,days,Excluded from primary model,0,0.0,100.0
+Days for shipment (scheduled),int64,Days of scheduled delivery of the purchased product,days,Predictor or aggregation source,0,0.0,100.0
+Benefit per order,float64,Earnings per order placed,source currency units; denomination unverified,Excluded from primary model,0,0.0,100.0
+Sales per customer,float64,Total sales per customer made per customer,source currency units; denomination unverified,Excluded from primary model,0,0.0,100.0
+Delivery Status,str,"Delivery status of orders: Advance shipping , Late delivery , Shipping canceled , Shipping on time",not applicable,Excluded from primary model,0,0.0,100.0
+Late_delivery_risk,int64,"Categorical variable that indicates if sending is late (1), it is not late (0).",0/1,Target,0,0.0,100.0
+Category Id,int64,Product category code,not applicable,Excluded from primary model,0,0.0,100.0
+Category Name,str,Description of the product category,not applicable,Predictor or aggregation source,0,0.0,100.0
+Customer City,str,City where the customer made the purchase,not applicable,Excluded from primary model,0,0.0,100.0
+Customer Country,str,Country where the customer made the purchase,not applicable,Excluded from primary model,0,0.0,100.0
+Customer Email,str,Customer's email,not applicable,Excluded from primary model,0,0.0,100.0
+Customer Fname,str,Customer name,not applicable,Excluded from primary model,0,0.0,100.0
+Customer Id,int64,Customer ID,not applicable,Excluded from primary model,0,0.0,100.0
+Customer Lname,str,Customer lastname,not applicable,Excluded from primary model,8,0.004432,99.995568
+Customer Password,str,Masked customer key,not applicable,Excluded from primary model,0,0.0,100.0
+Customer Segment,str,"Types of Customers: Consumer , Corporate , Home Office",not applicable,Predictor or aggregation source,0,0.0,100.0
+Customer State,str,State to which the store where the purchase is registered belongs,not applicable,Excluded from primary model,0,0.0,100.0
+Customer Street,str,Street to which the store where the purchase is registered belongs,not applicable,Excluded from primary model,0,0.0,100.0
+Customer Zipcode,float64,Customer Zipcode,not applicable,Excluded from primary model,3,0.001662,99.998338
+Department Id,int64,Department code of store,not applicable,Excluded from primary model,0,0.0,100.0
+Department Name,str,Department name of store,not applicable,Predictor or aggregation source,0,0.0,100.0
+Latitude,float64,Latitude corresponding to location of store,degrees,Excluded from primary model,0,0.0,100.0
+Longitude,float64,Longitude corresponding to location of store,degrees,Excluded from primary model,0,0.0,100.0
+Market,str,"Market to where the order is delivered : Africa , Europe , LATAM , Pacific Asia , USCA",not applicable,Predictor or aggregation source,0,0.0,100.0
+Order City,str,Destination city of the order,not applicable,Excluded from primary model,0,0.0,100.0
+Order Country,str,Destination country of the order,not applicable,Excluded from primary model,0,0.0,100.0
+Order Customer Id,int64,Customer order code,not applicable,Excluded from primary model,0,0.0,100.0
+order date (DateOrders),str,Date on which the order is made,datetime,Predictor or aggregation source,0,0.0,100.0
+Order Id,int64,Order code,not applicable,Local grouping key only,0,0.0,100.0
+Order Item Cardprod Id,int64,Product code generated through the RFID reader,not applicable,Excluded from primary model,0,0.0,100.0
+Order Item Discount,float64,Order item discount value,source currency units; denomination unverified,Excluded from primary model,0,0.0,100.0
+Order Item Discount Rate,float64,Order item discount percentage,proportion,Predictor or aggregation source,0,0.0,100.0
+Order Item Id,int64,Order item code,not applicable,Excluded from primary model,0,0.0,100.0
+Order Item Product Price,float64,Price of products without discount,source currency units; denomination unverified,Predictor or aggregation source,0,0.0,100.0
+Order Item Profit Ratio,float64,Order Item Profit Ratio,proportion,Excluded from primary model,0,0.0,100.0
+Order Item Quantity,int64,Number of products per order,units,Predictor or aggregation source,0,0.0,100.0
+Sales,float64,Value in sales,source currency units; denomination unverified,Excluded from primary model,0,0.0,100.0
+Order Item Total,float64,Total amount per order,source currency units; denomination unverified,Excluded from primary model,0,0.0,100.0
+Order Profit Per Order,float64,Order Profit Per Order,source currency units; denomination unverified,Excluded from primary model,0,0.0,100.0
+Order Region,str,"Region of the world where the order is delivered :  Southeast Asia ,South Asia ,Oceania ,Eastern Asia, West Asia , West of USA , US Center , West Africa, Central Africa ,North Africa ,Western Europe ,Northern , Caribbean , South America ,East Africa ,Southern Europe , East of USA ,Canada ,Southern Africa , Central Asia ,  Europe , Central America, Eastern Europe , South of  USA",not applicable,Predictor or aggregation source,0,0.0,100.0
+Order State,str,State of the region where the order is delivered,not applicable,Excluded from primary model,0,0.0,100.0
+Order Status,str,"Order Status : COMPLETE , PENDING , CLOSED , PENDING_PAYMENT ,CANCELED , PROCESSING ,SUSPECTED_FRAUD ,ON_HOLD ,PAYMENT_REVIEW",not applicable,Excluded from primary model,0,0.0,100.0
+Order Zipcode,float64,See publisher description file,not applicable,Excluded from primary model,155679,86.239676,13.760324
+Product Card Id,int64,Product code,not applicable,Excluded from primary model,0,0.0,100.0
+Product Category Id,int64,Product category code,not applicable,Excluded from primary model,0,0.0,100.0
+Product Description,float64,Product Description,not applicable,Excluded from primary model,180519,100.0,0.0
+Product Image,str,Link of visit and purchase of the product,not applicable,Excluded from primary model,0,0.0,100.0
+Product Name,str,Product Name,not applicable,Excluded from primary model,0,0.0,100.0
+Product Price,float64,Product Price,source currency units; denomination unverified,Excluded from primary model,0,0.0,100.0
+Product Status,int64,"Status of the product stock :If it is 1 not available , 0 the product is available",not applicable,Excluded from primary model,0,0.0,100.0
+shipping date (DateOrders),str,See publisher description file,datetime,Excluded from primary model,0,0.0,100.0
+Shipping Mode,str,"The following shipping modes are presented : Standard Class , First Class , Second Class , Same Day",not applicable,Predictor or aggregation source,0,0.0,100.0
