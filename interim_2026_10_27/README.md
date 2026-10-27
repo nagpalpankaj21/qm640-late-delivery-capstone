@@ -23,6 +23,10 @@ Outputs are written beside the scripts. The initial audit verifies the source SH
 
 Expected split: training 39,450; validation 13,151; reserved test 13,151. Seeds: partition 640; order bootstrap 642; customer bootstrap 643; training-only pilot 644. No reserved-test prediction metrics are generated. The pilot estimates variability; it does not tune hyperparameters or establish operational effect sizes.
 
+## Verification
+
+The published scripts were copied into a clean output directory and rerun against the attributed source. All six benchmark/model results and the three-fold variance pilot matched the saved results. See [reproduction_verified.json](reproduction_verified.json).
+
 ## Interpretation and attribution
 
 Expanded logistic validation AUC = 0.73964 and Brier = 0.19509. Random forest and gradient boosting have similar performance, with no clear superiority in the adjusted paired probability-loss intervals. Shipping mode supplies most predictive signal. Within-mode discrimination is weak in several groups. Explanations are additive logistic log-odds contributions, not causal effects or explanations of the tree models.

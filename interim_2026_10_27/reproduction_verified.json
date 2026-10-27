@@ -1,0 +1,14 @@
+{
+  "status": "passed",
+  "source": "published scripts copied into a clean output directory",
+  "models_verified": [
+    "Constant",
+    "Mode lookup",
+    "Logistic restricted",
+    "Logistic full",
+    "Random forest",
+    "Gradient boosting"
+  ],
+  "training_pilot_verified": true,
+  "reserved_test_scored": false
+}
