@@ -1,0 +1,47 @@
+{
+  "commit": "1bda9d89c43434e7f787abeb61e6c12c05e32dad",
+  "checks": [
+    {
+      "url": "https://raw.githubusercontent.com/nagpalpankaj21/qm640-late-delivery-capstone/1bda9d89c43434e7f787abeb61e6c12c05e32dad/data/raw/README.md",
+      "status": 200,
+      "bytes": 1604,
+      "sha256": "ca9631e505897969aad999e70ab1f6f90fcc298ca6f2ca1fbb5f251c83b1cf81"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/nagpalpankaj21/qm640-late-delivery-capstone/1bda9d89c43434e7f787abeb61e6c12c05e32dad/interim_2026_10_27/processed_orders.csv",
+      "status": 200,
+      "bytes": 8083948,
+      "sha256": "bba49c9792f93ae7c086061b5349c7b673165e7197093046bda844613c7b59f7"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/nagpalpankaj21/qm640-late-delivery-capstone/1bda9d89c43434e7f787abeb61e6c12c05e32dad/interim_2026_10_27/README.md",
+      "status": 200,
+      "bytes": 3630,
+      "sha256": "c3fdc4469e0d0ec62b6a4bb459e6057be5b10ac588e7b36284e603afa4641b91"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/nagpalpankaj21/qm640-late-delivery-capstone/1bda9d89c43434e7f787abeb61e6c12c05e32dad/interim_2026_10_27/audit_outcome_and_bootstrap.py",
+      "status": 200,
+      "bytes": 4186,
+      "sha256": "ea5bb2402458bba5d08f2c3ef755a285dacd9089460bf642cc2c4c5ae19db011"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/nagpalpankaj21/qm640-late-delivery-capstone/1bda9d89c43434e7f787abeb61e6c12c05e32dad/interim_2026_10_27/outcome_label_audit.json",
+      "status": 200,
+      "bytes": 1473,
+      "sha256": "edbbc765d11942297e20fe4479cc65be001aa16ea48330b995b547cecbfcbd30"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/nagpalpankaj21/qm640-late-delivery-capstone/1bda9d89c43434e7f787abeb61e6c12c05e32dad/interim_2026_10_27/paired_brier_bootstrap_5000.json",
+      "status": 200,
+      "bytes": 757,
+      "sha256": "8e80e9b7575c8e869fe132a4ccf88b10e8a9ad5b3f8ffc6714ea2f2c8d0edd12"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/nagpalpankaj21/qm640-late-delivery-capstone/1bda9d89c43434e7f787abeb61e6c12c05e32dad/interim_2026_10_27/enhanced_results.json",
+      "status": 200,
+      "bytes": 23434,
+      "sha256": "c256189f5b64f7885e8388c67becd75fc5d7a00b12f50b8880f4cba8b1f313ed"
+    }
+  ]
+}

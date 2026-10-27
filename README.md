@@ -6,7 +6,7 @@ This repository contains the original source audit and the executed October 27 i
 
 ## Interim report evaluator access
 
-[Download the final interim report PDF](reports/Pankaj_Nagpal_QM640_Interim_Report_27_Oct_2026.pdf)
+[Download the revised interim report PDF](reports/Pankaj_Nagpal_QM640_Interim_Report_27_Oct_2026_Revised.pdf)
 
 
 - [Analysis instructions and findings](interim_2026_10_27/README.md)
