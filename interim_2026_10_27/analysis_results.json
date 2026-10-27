@@ -1,0 +1,393 @@
+{
+  "sha256": "fa6d022ed437155e1a2f0378710602848703c8a7f203f7ff5d77805bf8480aa6",
+  "raw_rows": 180519,
+  "raw_columns": 53,
+  "orders": 65752,
+  "excluded_orders": 0,
+  "conflicts": {
+    "Late_delivery_risk": 0,
+    "Shipping Mode": 0,
+    "Market": 0,
+    "Order Region": 0,
+    "Customer Segment": 0,
+    "Type": 0,
+    "Days for shipment (scheduled)": 0,
+    "order date (DateOrders)": 0
+  },
+  "duplicates_full": 0,
+  "duplicate_line_ids": 0,
+  "invalid_lines": 0,
+  "date_parse_failures": 0,
+  "raw_missing": {
+    "Customer Lname": 8,
+    "Customer Zipcode": 3,
+    "Order Zipcode": 155679,
+    "Product Description": 180519
+  },
+  "splits": {
+    "train": {
+      "n": 39450,
+      "positive": 21628
+    },
+    "validation": {
+      "n": 13151,
+      "positive": 7210
+    },
+    "test": {
+      "n": 13151,
+      "positive": 7210
+    }
+  },
+  "development_n": 52601,
+  "development_prevalence": 0.5482405277466208,
+  "by_mode": [
+    {
+      "Shipping Mode": "First Class",
+      "size": 8060,
+      "sum": 7681,
+      "mean": 0.9529776675
+    },
+    {
+      "Shipping Mode": "Same Day",
+      "size": 2832,
+      "sum": 1287,
+      "mean": 0.4544491525
+    },
+    {
+      "Shipping Mode": "Second Class",
+      "size": 10219,
+      "sum": 7848,
+      "mean": 0.7679812115
+    },
+    {
+      "Shipping Mode": "Standard Class",
+      "size": 31490,
+      "sum": 12022,
+      "mean": 0.3817719911
+    }
+  ],
+  "by_market": [
+    {
+      "Market": "Africa",
+      "size": 3078,
+      "sum": 1665,
+      "mean": 0.5409356725
+    },
+    {
+      "Market": "Europe",
+      "size": 14978,
+      "sum": 8230,
+      "mean": 0.5494725598
+    },
+    {
+      "Market": "LATAM",
+      "size": 13661,
+      "sum": 7410,
+      "mean": 0.5424200278
+    },
+    {
+      "Market": "Pacific Asia",
+      "size": 14058,
+      "sum": 7772,
+      "mean": 0.5528524683
+    },
+    {
+      "Market": "USCA",
+      "size": 6826,
+      "sum": 3761,
+      "mean": 0.5509815412
+    }
+  ],
+  "by_scheduled": [
+    {
+      "Days for shipment (scheduled)": 0,
+      "size": 2832,
+      "sum": 1287,
+      "mean": 0.4544491525
+    },
+    {
+      "Days for shipment (scheduled)": 1,
+      "size": 8060,
+      "sum": 7681,
+      "mean": 0.9529776675
+    },
+    {
+      "Days for shipment (scheduled)": 2,
+      "size": 10219,
+      "sum": 7848,
+      "mean": 0.7679812115
+    },
+    {
+      "Days for shipment (scheduled)": 4,
+      "size": 31490,
+      "sum": 12022,
+      "mean": 0.3817719911
+    }
+  ],
+  "by_year": [
+    {
+      "year": 2015,
+      "size": 16664,
+      "sum": 9075,
+      "mean": 0.5445871339
+    },
+    {
+      "year": 2016,
+      "size": 16667,
+      "sum": 9211,
+      "mean": 0.552648947
+    },
+    {
+      "year": 2017,
+      "size": 17570,
+      "sum": 9584,
+      "mean": 0.5454752419
+    },
+    {
+      "year": 2018,
+      "size": 1700,
+      "sum": 968,
+      "mean": 0.5694117647
+    }
+  ],
+  "by_segment": [
+    {
+      "Customer Segment": "Consumer",
+      "size": 27302,
+      "sum": 14927,
+      "mean": 0.5467365028
+    },
+    {
+      "Customer Segment": "Corporate",
+      "size": 15905,
+      "sum": 8746,
+      "mean": 0.5498899717
+    },
+    {
+      "Customer Segment": "Home Office",
+      "size": 9394,
+      "sum": 5165,
+      "mean": 0.5498190334
+    }
+  ],
+  "numeric_summary": {
+    "order_quantity": {
+      "count": 52601.0,
+      "mean": 5.8466,
+      "std": 4.1743,
+      "min": 1.0,
+      "25%": 2.0,
+      "50%": 5.0,
+      "75%": 9.0,
+      "max": 24.0
+    },
+    "weighted_unit_price": {
+      "count": 52601.0,
+      "mean": 135.1242,
+      "std": 149.641,
+      "min": 9.99,
+      "25%": 59.99,
+      "50%": 92.2144,
+      "75%": 149.985,
+      "max": 1500.0
+    },
+    "discount_rate_mean": {
+      "count": 52601.0,
+      "mean": 0.1018,
+      "std": 0.0543,
+      "min": 0.0,
+      "25%": 0.06,
+      "50%": 0.1,
+      "75%": 0.14,
+      "max": 0.25
+    }
+  },
+  "outliers": {
+    "order_quantity": {
+      "lower": -8.5,
+      "upper": 19.5,
+      "flagged_development": 75
+    },
+    "weighted_unit_price": {
+      "lower": -75.00166447666663,
+      "upper": 284.97611194111107,
+      "flagged_development": 5196
+    },
+    "discount_rate_mean": {
+      "lower": -0.06000000325,
+      "upper": 0.26000000275,
+      "flagged_development": 0
+    }
+  },
+  "mixed_category_development": 35624,
+  "metrics": {
+    "Constant probability": {
+      "n": 13151,
+      "tp": 7210,
+      "fp": 5941,
+      "tn": 0,
+      "fn": 0,
+      "accuracy": 0.5482472815755456,
+      "precision": 0.5482472815755456,
+      "recall": 1.0,
+      "specificity": 0.0,
+      "f1": 0.7082166887677422,
+      "auc": 0.5,
+      "average_precision": 0.5482472815755456,
+      "brier": 0.24767219990166506,
+      "alert_rate": 1.0
+    },
+    "Shipping mode lookup": {
+      "n": 13151,
+      "tp": 3894,
+      "fp": 673,
+      "tn": 5268,
+      "fn": 3316,
+      "accuracy": 0.6966770587788,
+      "precision": 0.8526384935406175,
+      "recall": 0.5400832177531206,
+      "specificity": 0.8867194075071537,
+      "f1": 0.661288953044069,
+      "auc": 0.7294992997484978,
+      "average_precision": 0.750540285343472,
+      "brier": 0.19533768268555804,
+      "alert_rate": 0.347273971561098
+    },
+    "Logistic regression": {
+      "n": 13151,
+      "tp": 3917,
+      "fp": 700,
+      "tn": 5241,
+      "fn": 3293,
+      "accuracy": 0.6963728993992853,
+      "precision": 0.8483863980940004,
+      "recall": 0.5432732316227462,
+      "specificity": 0.8821747180609325,
+      "f1": 0.6623826836898622,
+      "auc": 0.7412166936969894,
+      "average_precision": 0.8153197566787165,
+      "brier": 0.1945689705229944,
+      "alert_rate": 0.35107596380503386
+    }
+  },
+  "ci": [
+    [
+      0.732952268395241,
+      0.749387718144844
+    ],
+    [
+      0.19184525068725386,
+      0.1973978497334538
+    ],
+    [
+      -5.67727328395217e-06,
+      0.0014499357172760821
+    ]
+  ],
+  "calibration": [
+    {
+      "lower": 0.2,
+      "n": 758,
+      "predicted": 0.29452149235043745,
+      "observed": 0.35356200527704484
+    },
+    {
+      "lower": 0.3,
+      "n": 2358,
+      "predicted": 0.3415358214897067,
+      "observed": 0.35411365564037317
+    },
+    {
+      "lower": 0.4,
+      "n": 5418,
+      "predicted": 0.4210492140977664,
+      "observed": 0.40420819490586934
+    },
+    {
+      "lower": 0.5,
+      "n": 50,
+      "predicted": 0.5057962360063836,
+      "observed": 0.46
+    },
+    {
+      "lower": 0.6,
+      "n": 357,
+      "predicted": 0.6938284534776361,
+      "observed": 0.6974789915966386
+    },
+    {
+      "lower": 0.7,
+      "n": 1966,
+      "predicted": 0.7755726690098864,
+      "observed": 0.7899287894201424
+    },
+    {
+      "lower": 0.8,
+      "n": 223,
+      "predicted": 0.803600987125508,
+      "observed": 0.7533632286995515
+    },
+    {
+      "lower": 0.9,
+      "n": 2021,
+      "predicted": 0.9524269869591302,
+      "observed": 0.9520039584364176
+    }
+  ],
+  "ece": 0.015932707103345385,
+  "iterations": 7,
+  "coefficients": {
+    "intercept": 3.1445780491356587,
+    "order_quantity": 0.004790441945147735,
+    "weighted_unit_price": 0.016824042259764305,
+    "discount_rate_mean": -0.003827985045217651,
+    "Shipping Mode = Same Day": -3.202031996787743,
+    "Shipping Mode = Second Class": -1.8169239072883365,
+    "Shipping Mode = Standard Class": -3.4974596785272456,
+    "Market = Europe": -0.03353819010943036,
+    "Market = LATAM": -0.05932282797634438,
+    "Market = Pacific Asia": -0.02016713721789661,
+    "Market = USCA": 0.004375622282026383,
+    "Customer Segment = Corporate": 0.0030885446467503346,
+    "Customer Segment = Home Office": 0.010221147050736639,
+    "Type = DEBIT": 0.03670141096290906,
+    "Type = PAYMENT": 0.06377768159051239,
+    "Type = TRANSFER": -0.43781139010490344,
+    "order_month = 10": -0.03482401213570569,
+    "order_month = 11": -0.04057505622192287,
+    "order_month = 12": -0.055450621802556124,
+    "order_month = 2": -0.03634437487962956,
+    "order_month = 3": -0.0330937421701283,
+    "order_month = 4": 0.001144039788382948,
+    "order_month = 5": -0.03274869079132242,
+    "order_month = 6": -0.012295677169734603,
+    "order_month = 7": -0.07773147611299867,
+    "order_month = 8": -0.07864809537196152,
+    "order_month = 9": -0.06157167525511849,
+    "order_weekday = 1": 0.06153908187111861,
+    "order_weekday = 2": 0.04324152414250995,
+    "order_weekday = 3": 0.023864117234783197,
+    "order_weekday = 4": 0.050149553459041214,
+    "order_weekday = 5": -0.009668997883930445,
+    "order_weekday = 6": 0.007329032457581048
+  },
+  "features": [
+    "order_quantity",
+    "weighted_unit_price",
+    "discount_rate_mean",
+    "Shipping Mode",
+    "Market",
+    "Customer Segment",
+    "Type",
+    "order_month",
+    "order_weekday"
+  ],
+  "training_prevalence": 0.5482382762991128,
+  "date_min": "2015-01-01 00:00:00",
+  "date_max": "2018-01-31 23:38:00",
+  "software": {
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "pandas": "3.0.1"
+  }
+}

@@ -1,0 +1,82 @@
+{
+  "training_only_n": 39450,
+  "folds": 3,
+  "seed": 644,
+  "method": "Stratified out-of-fold predictions and fold-specific training backgrounds; no validation/test outcomes",
+  "paired_loss_variability": [
+    {
+      "pair": "Logistic minus Forest",
+      "paired_loss_sd": 0.044944041846894336
+    },
+    {
+      "pair": "Logistic minus Boosting",
+      "paired_loss_sd": 0.039641775681200156
+    },
+    {
+      "pair": "Forest minus Boosting",
+      "paired_loss_sd": 0.036569359120822584
+    }
+  ],
+  "segment_variability": [
+    {
+      "family": "Shipping Mode",
+      "segment": "First Class",
+      "n": 6039,
+      "normalized_share_sd": 0.03746863666839848
+    },
+    {
+      "family": "Shipping Mode",
+      "segment": "Same Day",
+      "n": 2130,
+      "normalized_share_sd": 0.07549124071850458
+    },
+    {
+      "family": "Shipping Mode",
+      "segment": "Second Class",
+      "n": 7673,
+      "normalized_share_sd": 0.06681804040477812
+    },
+    {
+      "family": "Shipping Mode",
+      "segment": "Standard Class",
+      "n": 23608,
+      "normalized_share_sd": 0.06535157576031417
+    },
+    {
+      "family": "Market",
+      "segment": "Africa",
+      "n": 2368,
+      "normalized_share_sd": 0.09138856838090893
+    },
+    {
+      "family": "Market",
+      "segment": "Europe",
+      "n": 11277,
+      "normalized_share_sd": 0.09504395720607585
+    },
+    {
+      "family": "Market",
+      "segment": "LATAM",
+      "n": 10208,
+      "normalized_share_sd": 0.09229789427499802
+    },
+    {
+      "family": "Market",
+      "segment": "Pacific Asia",
+      "n": 10518,
+      "normalized_share_sd": 0.09791716427680294
+    },
+    {
+      "family": "Market",
+      "segment": "USCA",
+      "n": 5079,
+      "normalized_share_sd": 0.09381280657544314
+    }
+  ],
+  "max_paired_sd": 0.044944041846894336,
+  "max_segment_sd": 0.09791716427680294,
+  "planning_sd_retained": 0.2,
+  "effect_size_rq3": 0.01,
+  "effect_size_rq4": 0.05,
+  "effect_size_rationale": "RQ3 .01 is an absolute probability-loss planning threshold (about 4% of a .25 benchmark); RQ4 .05 is a five-percentage-point attribution-share contrast. Neither is a validated business value or an observed effect."
+}

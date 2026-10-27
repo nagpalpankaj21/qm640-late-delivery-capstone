@@ -1,10 +1,17 @@
-# QM640 synopsis reproducibility support
+# QM640 late-delivery capstone
 
 Prepared locally for Pankaj Nagpal. 
 
-This package contains verified source-data profiling, a complete 53-field raw dictionary,
-and measured missingness. Predictive modeling, inference, and SHAP analysis are proposed
-capstone work; this package does not claim those analyses have been performed.
+This repository contains the original source audit and the executed October 27 interim analysis for Pankaj Nagpal, Group 7.
+
+## Interim report evaluator access
+
+- [Analysis instructions and findings](interim_2026_10_27/README.md)
+- [Cleaned order-level feature data](interim_2026_10_27/processed_orders.csv)
+- [Executed model and inference outputs](interim_2026_10_27/enhanced_results.json)
+- [Training-only sample-size pilot](interim_2026_10_27/pilot_planning_results.json)
+
+The interim analysis includes logistic regression, random forest, gradient boosting, adjusted associations, grouped logistic explanations, and robustness checks. These are development/validation findings. The reserved final test set has not been scored.
 
 ## Source and license
 
@@ -32,12 +39,8 @@ fa6d022ed437155e1a2f0378710602848703c8a7f203f7ff5d77805bf8480aa6
 Expected: 180,519 source rows, 53 fields, 65,752 distinct orders.
 The raw non-null audit does not establish range validity or pre-dispatch feature availability.
 
-## Proposed analysis sequence
+## Remaining final-report work
 
-- Validate pre-dispatch availability and within-order metadata consistency.
-- Aggregate line items to one order, using the rules in the synopsis.
-- Freeze independent training, validation, and test orders.
-- Estimate RQ1 associations; tune and calibrate RQ2 models within development data.
-- Compare paired test Brier losses for RQ3; obtain RQ4 explanations and uncertainty.
-- Publish aggregate outputs, code, executed environment versions, and limitations.
-
+- Training-only tuning and calibration, operational threshold policy, customer-separated and functional-form sensitivity checks.
+- Freeze the selected pipeline before reserved-test evaluation.
+- Evaluate final probability quality and segment behavior; develop bounded managerial recommendations.
