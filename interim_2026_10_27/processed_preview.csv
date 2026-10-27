@@ -1,0 +1,11 @@
+Shipping Mode,Market,order_quantity,mixed_category,Late_delivery_risk
+Standard Class,LATAM,10,1,1
+Standard Class,LATAM,6,1,1
+Standard Class,LATAM,18,1,0
+Standard Class,LATAM,4,1,1
+Standard Class,LATAM,9,1,1
+Standard Class,LATAM,7,0,0
+Standard Class,LATAM,14,1,0
+Standard Class,LATAM,4,1,0
+Second Class,LATAM,9,1,1
+Second Class,LATAM,1,0,1

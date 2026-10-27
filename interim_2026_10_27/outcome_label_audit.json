@@ -1,0 +1,52 @@
+{
+  "population": "development orders only; reserved test excluded",
+  "development_orders": 52601,
+  "within_order_conflicts": {
+    "Customer Id": 0,
+    "Days for shipping (real)": 0,
+    "Days for shipment (scheduled)": 0,
+    "Delivery Status": 0,
+    "Late_delivery_risk": 0
+  },
+  "simple_duration_rule_agreements": 51295,
+  "simple_duration_rule_disagreements": 1306,
+  "simple_duration_rule_agreement_rate": 0.9751715746848919,
+  "canceled_orders": 2281,
+  "noncanceled_orders": 50320,
+  "cancellation_aware_agreements": 52601,
+  "cancellation_aware_disagreements": 0,
+  "status_counts": [
+    {
+      "status": "Advance shipping",
+      "orders": 12078,
+      "late_labels": 0,
+      "duration_exceeds_promise": 0,
+      "simple_rule_disagreements": 0,
+      "cancellation_aware_disagreements": 0
+    },
+    {
+      "status": "Late delivery",
+      "orders": 28838,
+      "late_labels": 28838,
+      "duration_exceeds_promise": 28838,
+      "simple_rule_disagreements": 0,
+      "cancellation_aware_disagreements": 0
+    },
+    {
+      "status": "Shipping canceled",
+      "orders": 2281,
+      "late_labels": 0,
+      "duration_exceeds_promise": 1306,
+      "simple_rule_disagreements": 1306,
+      "cancellation_aware_disagreements": 0
+    },
+    {
+      "status": "Shipping on time",
+      "orders": 9404,
+      "late_labels": 0,
+      "duration_exceeds_promise": 0,
+      "simple_rule_disagreements": 0,
+      "cancellation_aware_disagreements": 0
+    }
+  ]
+}

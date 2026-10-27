@@ -42,6 +42,12 @@ fa6d022ed437155e1a2f0378710602848703c8a7f203f7ff5d77805bf8480aa6
 Expected: 180,519 source rows, 53 fields, 65,752 distinct orders.
 The raw non-null audit does not establish range validity or pre-dispatch feature availability.
 
+## Detailed review corrections
+
+- [Raw source access pointer](data/raw/README.md)
+- [Development outcome-label audit](interim_2026_10_27/outcome_label_audit.csv)
+- [5,000-draw paired model comparison](interim_2026_10_27/paired_brier_bootstrap_5000.json)
+
 ## Remaining final-report work
 
 - Training-only tuning and calibration, operational threshold policy, customer-separated and functional-form sensitivity checks.

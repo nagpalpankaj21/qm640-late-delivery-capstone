@@ -1,0 +1,30 @@
+{
+  "replicates": 5000,
+  "seed": 645,
+  "clusters": 9151,
+  "validation_orders": 13151,
+  "method": "paired whole-customer percentile bootstrap of Brier-loss differences; 98.333% intervals",
+  "contrasts": {
+    "Logistic full vs Random forest": {
+      "difference": -0.00014302232681960466,
+      "ci9833": [
+        -0.0009695934334325962,
+        0.0006818034029736713
+      ]
+    },
+    "Logistic full vs Gradient boosting": {
+      "difference": 0.0004436752693007655,
+      "ci9833": [
+        -0.00029995966452650173,
+        0.001183405227269508
+      ]
+    },
+    "Random forest vs Gradient boosting": {
+      "difference": 0.0005866975961203703,
+      "ci9833": [
+        -8.064099459281239e-05,
+        0.0012016234013128024
+      ]
+    }
+  }
+}

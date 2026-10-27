@@ -806,6 +806,20 @@
     },
     "paired9833": {
       "Logistic full vs Random forest": [
+        -0.0009695934334325962,
+        0.0006818034029736713
+      ],
+      "Logistic full vs Gradient boosting": [
+        -0.00029995966452650173,
+        0.001183405227269508
+      ],
+      "Random forest vs Gradient boosting": [
+        -8.064099459281239e-05,
+        0.0012016234013128024
+      ]
+    },
+    "paired9833_500_draws": {
+      "Logistic full vs Random forest": [
         -0.0009530977275649123,
         0.0006819279880410471
       ],
@@ -817,7 +831,9 @@
         -7.706665578073423e-06,
         0.0012618181231919432
       ]
-    }
+    },
+    "paired_replicates": 5000,
+    "paired_seed": 645
   },
   "calibration": [
     {

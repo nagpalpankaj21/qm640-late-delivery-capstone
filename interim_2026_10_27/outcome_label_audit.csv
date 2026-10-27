@@ -1,0 +1,5 @@
+status,orders,late_labels,duration_exceeds_promise,simple_rule_disagreements,cancellation_aware_disagreements
+Advance shipping,12078,0,0,0,0
+Late delivery,28838,28838,28838,0,0
+Shipping canceled,2281,0,1306,1306,0
+Shipping on time,9404,0,0,0,0

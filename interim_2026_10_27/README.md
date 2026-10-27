@@ -11,6 +11,11 @@ Pankaj Nagpal, Group 7. This folder contains executed interim analyses, a non-id
 
 Raw data: [DataCo Version 5](https://data.mendeley.com/datasets/8gx2fvg2k6/5). Download DataCoSupplyChainDataset.csv and DescriptionDataCoSupplyChain.csv there. Raw identifying records are not redistributed.
 
+- [Outcome-label reconciliation](outcome_label_audit.csv) and [audit definition](outcome_label_audit.json).
+- [5,000-draw paired Brier intervals](paired_brier_bootstrap_5000.json).
+- [Selected-column training preview](processed_preview.csv).
+- [Exact raw-data filenames and download instructions](../data/raw/README.md).
+
 ## Reproduce
 
 Use Python 3.12.14 and install `pip install -r requirements.txt` in a clean environment.
@@ -18,10 +23,11 @@ Use Python 3.12.14 and install `pip install -r requirements.txt` in a clean envi
 1. `python baseline_audit.py --data /path/to/DataCoSupplyChainDataset.csv`
 2. `python enhance_analysis.py /path/to/DataCoSupplyChainDataset.csv`
 3. `python pilot_planning.py`
+4. `python audit_outcome_and_bootstrap.py /path/to/DataCoSupplyChainDataset.csv`
 
 Outputs are written beside the scripts. The initial audit verifies the source SHA-256 before analysis. The private order/customer grouping keys and timestamps needed for clustered and chronological checks are regenerated from the raw source locally.
 
-Expected split: training 39,450; validation 13,151; reserved test 13,151. Seeds: partition 640; order bootstrap 642; customer bootstrap 643; training-only pilot 644. No reserved-test prediction metrics are generated. The pilot estimates variability; it does not tune hyperparameters or establish operational effect sizes.
+Expected split: training 39,450; validation 13,151; reserved test 13,151. Seeds: partition 640; order bootstrap 642; customer bootstrap 643; training-only pilot 644; 5,000-draw paired customer bootstrap 645. No reserved-test prediction metrics are generated. The additional audit reconciles the outcome on development orders only and overwrites the primary paired-loss intervals with 5,000 customer resamples. AUC/Brier pointwise intervals retain 500 draws. The pilot estimates variability; it does not tune hyperparameters or establish operational effect sizes.
 
 ## Verification
 

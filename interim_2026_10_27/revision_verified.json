@@ -1,0 +1,9 @@
+{
+  "status": "passed",
+  "model_point_estimates": "unchanged; previously clean-rerun verified",
+  "revision_checks": [
+    "development-only outcome audit reproduced exactly",
+    "5000 customer-bootstrap Brier contrasts reproduced exactly"
+  ],
+  "reserved_test_scored": false
+}
